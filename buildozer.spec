@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = To-Do List [Sidon]
+title = ToDoList
 
 # (str) Package name
-package.name = ToDoListSidon
+package.name = myapp
 
 icon.filename = app_icon.png
 
@@ -39,7 +39,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3==3.7.6,hostpython3==3.7.6,kivy,pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -66,7 +66,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.7.6
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
@@ -447,8 +447,3 @@ warn_on_root = 1
 #title = My Application (demo)
 #
 #[app:source.exclude_patterns@demo]
-#images/hd/*
-#
-#    Then, invoke the command line with the "demo" profile:
-#
-#buildozer --profile demo android debug
